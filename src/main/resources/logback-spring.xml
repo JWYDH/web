@@ -79,7 +79,7 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
         不能设置为INHERITED或者同义词NULL。默认是DEBUG
         可以包含零个或多个元素，标识这个appender将会添加到这个logger。
     -->
-    <root level="info">
+    <root level="debug">
         <appender-ref ref="console"/>
         <appender-ref ref="file"/>
     </root>
