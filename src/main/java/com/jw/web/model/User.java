@@ -1,6 +1,5 @@
 package com.jw.web.model;
 
-import javax.jws.soap.SOAPBinding;
 import javax.persistence.*;
 
 @Entity
@@ -17,9 +16,11 @@ public class User {
     protected User() {
     }
 
-    public User(String accountId, String token){
+    public User(String accountId, String token, Integer gmtCreat, Integer gmtModified){
         this.accountId = accountId;
         this.token = token;
+        this.gmtCreat = gmtCreat;
+        this.gmtModified = gmtModified;
     }
 
     @Override
